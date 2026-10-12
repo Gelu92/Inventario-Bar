@@ -1,8 +1,8 @@
 // Service worker: keeps the app working offline and caches the PDF libraries.
-var CACHE = 'inventario-bar-v5';
+var CACHE = 'inventario-bar-v6';
 var ASSETS = [
   './', './index.html', './app.css', './app.js', './manifest.webmanifest',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png', './icons/apple-touch-icon.png'
+  './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png'
 ];
 var LIBS = [
   'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
@@ -11,7 +11,8 @@ var LIBS = [
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) {
-    return c.addAll(ASSETS).then(function () {
+    // add files one by one: a single missing file must not stop the app from working offline
+    return Promise.all(ASSETS.map(function (u) { return c.add(u).catch(function () { }); })).then(function () {
       return Promise.all(LIBS.map(function (u) { return c.add(new Request(u, { mode: 'cors' })).catch(function () { }); }));
     });
   }).then(function () { return self.skipWaiting(); }));

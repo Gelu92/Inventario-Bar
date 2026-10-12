@@ -26,7 +26,7 @@ App per l'inventario del bar che funziona nel browser e si installa sul telefono
 ## Pubblicare su GitHub Pages
 
 1. Crea un nuovo repository su GitHub (per esempio `inventario-bar`).
-2. Carica tutti i file di questa cartella nella radice del repository (**Add file → Upload files**).
+2. Carica **tutti i file** di questa cartella nella radice del repository (**Add file → Upload files**), comprese le quattro immagini `icon-192.png`, `icon-512.png`, `maskable-512.png` e `apple-touch-icon.png`. Non ci sono sottocartelle.
 3. Vai in **Settings → Pages**, alla voce *Source* scegli **Deploy from a branch**, branch `main`, cartella `/ (root)`, e salva.
 4. Dopo un minuto l'app è online su `https://TUO-NOME.github.io/inventario-bar/`.
 
@@ -37,4 +37,4 @@ App per l'inventario del bar che funziona nel browser e si installa sul telefono
 
 ## Aggiornare l'app
 
-Dopo aver modificato i file, cambia il numero in `sw.js` (`inventario-bar-v5` → `v6`) così i telefoni scaricano la nuova versione.
+Dopo aver modificato i file, cambia il numero in `sw.js` (`inventario-bar-v6` → `v7`) così i telefoni scaricano la nuova versione.
