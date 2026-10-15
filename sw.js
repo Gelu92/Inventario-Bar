@@ -1,7 +1,9 @@
-// Service worker: keeps the app working offline and caches the PDF libraries.
-var CACHE = 'inventario-bar-v8';
+// Service worker: the app always loads its newest files when online,
+// and keeps a copy so it also works offline.
+var VERSION = '9';
+var CACHE = 'inventario-bar-v' + VERSION;
 var ASSETS = [
-  './', './index.html', './app.css', './app.js', './manifest.webmanifest',
+  './', './index.html', './app.css?v=' + VERSION, './app.js?v=' + VERSION, './manifest.webmanifest',
   './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png'
 ];
 var LIBS = [
@@ -11,8 +13,9 @@ var LIBS = [
 
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) {
-    // add files one by one: a single missing file must not stop the app from working offline
-    return Promise.all(ASSETS.map(function (u) { return c.add(u).catch(function () { }); })).then(function () {
+    // 'reload' skips the browser's own cache, so the copy is really the new version;
+    // files are added one by one so a single missing file cannot break the app
+    return Promise.all(ASSETS.map(function (u) { return c.add(new Request(u, { cache: 'reload' })).catch(function () { }); })).then(function () {
       return Promise.all(LIBS.map(function (u) { return c.add(new Request(u, { mode: 'cors' })).catch(function () { }); }));
     });
   }).then(function () { return self.skipWaiting(); }));
@@ -27,20 +30,25 @@ self.addEventListener('activate', function (e) {
 self.addEventListener('fetch', function (e) {
   var req = e.request;
   if (req.method !== 'GET') return;
-  if (req.mode === 'navigate') {
-    // Network first for the page so updates arrive; cached copy when offline.
-    e.respondWith(fetch(req).then(function (res) {
-      var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put('./index.html', copy); });
+  var url = new URL(req.url);
+  if (url.origin === location.origin) {
+    // the app's own files: network first (always the newest), saved copy when offline
+    var fresh = req.mode === 'navigate' ? new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(req, { cache: 'no-cache' });
+    e.respondWith(fetch(fresh).then(function (res) {
+      if (res && res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req.mode === 'navigate' ? './index.html' : req, copy); }); }
       return res;
-    }).catch(function () { return caches.match('./index.html'); }));
+    }).catch(function () {
+      return caches.match(req.mode === 'navigate' ? './index.html' : req).then(function (hit) {
+        return hit || caches.match(req, { ignoreSearch: true });
+      });
+    }));
     return;
   }
-  // Stale-while-revalidate for everything else (app files, fonts, PDF libraries).
+  // fonts and PDF libraries: saved copy first, they never change
   e.respondWith(caches.match(req).then(function (hit) {
-    var net = fetch(req).then(function (res) {
+    return hit || fetch(req).then(function (res) {
       if (res && (res.ok || res.type === 'opaque')) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req, copy); }); }
       return res;
-    }).catch(function () { return hit; });
-    return hit || net;
+    });
   }));
 });

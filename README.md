@@ -38,4 +38,6 @@ App per l'inventario del bar che funziona nel browser e si installa sul telefono
 
 ## Aggiornare l'app
 
-Dopo aver modificato i file, cambia il numero in `sw.js` (`inventario-bar-v8` → `v9`) così i telefoni scaricano la nuova versione.
+Carica i file nuovi su GitHub (quelli con lo stesso nome vengono sostituiti). Alla riapertura successiva l'app scarica da sola la nuova versione, si ricarica una volta e mostra "App aggiornata alla versione …". I dati restano sul telefono; per sicurezza fai prima **Impostazioni → Scarica backup**.
+
+Il numero di versione si cambia solo in `app.js` (`APP_VERSION`): index.html e sw.js lo prendono da lì.

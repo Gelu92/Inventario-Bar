@@ -28,7 +28,7 @@
       sort: 'Ordine dei prodotti', sortQty: 'Quantità, dalla più alta', sortName: 'Nome, dalla A alla Z',
       installSec: 'Installazione', install: 'Installa sul telefono', installed: 'App installata su questo dispositivo.',
       installIOS: 'Su iPhone e iPad Apple non consente l’installazione con un pulsante: tocca Condividi e poi “Aggiungi alla schermata Home”.',
-      installWait: 'Se l’app è già installata, aprila dall’icona sul telefono. Altrimenti il pulsante si attiva dopo qualche secondo; se non succede usa il menu ⋮ di Chrome → Installa app.', iconsMissing: 'Su GitHub mancano i file delle icone (icon-192.png, icon-512.png…). Senza icone il telefono non installa l’app: caricali nella stessa cartella di index.html.', version: 'Versione {v}',
+      installWait: 'Se l’app è già installata, aprila dall’icona sul telefono. Altrimenti il pulsante si attiva dopo qualche secondo; se non succede usa il menu ⋮ di Chrome → Installa app.', iconsMissing: 'Su GitHub mancano i file delle icone (icon-192.png, icon-512.png…). Senza icone il telefono non installa l’app: caricali nella stessa cartella di index.html.', version: 'Versione {v}', updated: 'App aggiornata alla versione {v}',
       backup: 'Backup', exportJson: 'Scarica backup', importJson: 'Ripristina backup', imported: 'Backup ripristinato', badFile: 'File di backup non valido',
       data: 'Dati', reset: 'Cancella tutti i dati', resetConfirm: 'Tocca ancora per cancellare tutto', resetDone: 'Dati cancellati',
       saved: 'Salvato', added: 'Prodotto aggiunto', needName: 'Inserisci un nome', needCat: 'Crea prima una categoria',
@@ -57,7 +57,7 @@
       sort: 'Product order', sortQty: 'Quantity, highest first', sortName: 'Name, A to Z',
       installSec: 'Installation', install: 'Install on phone', installed: 'App installed on this device.',
       installIOS: 'On iPhone and iPad Apple does not allow one-tap install: tap Share, then “Add to Home Screen”.',
-      installWait: 'If the app is already installed, open it from its icon on the phone. Otherwise the button turns on after a few seconds; if it does not, use Chrome’s ⋮ menu → Install app.', iconsMissing: 'The icon files are missing on GitHub (icon-192.png, icon-512.png…). Without icons the phone will not install the app: upload them next to index.html.', version: 'Version {v}',
+      installWait: 'If the app is already installed, open it from its icon on the phone. Otherwise the button turns on after a few seconds; if it does not, use Chrome’s ⋮ menu → Install app.', iconsMissing: 'The icon files are missing on GitHub (icon-192.png, icon-512.png…). Without icons the phone will not install the app: upload them next to index.html.', version: 'Version {v}', updated: 'App updated to version {v}',
       backup: 'Backup', exportJson: 'Download backup', importJson: 'Restore backup', imported: 'Backup restored', badFile: 'Invalid backup file',
       data: 'Data', reset: 'Delete all data', resetConfirm: 'Tap again to delete everything', resetDone: 'Data deleted',
       saved: 'Saved', added: 'Product added', needName: 'Enter a name', needCat: 'Create a category first',
@@ -86,7 +86,7 @@
       sort: 'Orden de los productos', sortQty: 'Cantidad, de mayor a menor', sortName: 'Nombre, de la A a la Z',
       installSec: 'Instalación', install: 'Instalar en el móvil', installed: 'App instalada en este dispositivo.',
       installIOS: 'En iPhone y iPad Apple no permite instalar con un botón: toca Compartir y luego “Añadir a pantalla de inicio”.',
-      installWait: 'Si la app ya está instalada, ábrela desde su icono en el móvil. Si no, el botón se activa en unos segundos; si no ocurre, usa el menú ⋮ de Chrome → Instalar app.', iconsMissing: 'En GitHub faltan los archivos de los iconos (icon-192.png, icon-512.png…). Sin iconos el móvil no instala la app: súbelos junto a index.html.', version: 'Versión {v}',
+      installWait: 'Si la app ya está instalada, ábrela desde su icono en el móvil. Si no, el botón se activa en unos segundos; si no ocurre, usa el menú ⋮ de Chrome → Instalar app.', iconsMissing: 'En GitHub faltan los archivos de los iconos (icon-192.png, icon-512.png…). Sin iconos el móvil no instala la app: súbelos junto a index.html.', version: 'Versión {v}', updated: 'App actualizada a la versión {v}',
       backup: 'Copia de seguridad', exportJson: 'Descargar copia', importJson: 'Restaurar copia', imported: 'Copia restaurada', badFile: 'Archivo no válido',
       data: 'Datos', reset: 'Borrar todos los datos', resetConfirm: 'Toca otra vez para borrarlo todo', resetDone: 'Datos borrados',
       saved: 'Guardado', added: 'Producto añadido', needName: 'Escribe un nombre', needCat: 'Primero crea una categoría',
@@ -115,7 +115,7 @@
       sort: 'Ordre des produits', sortQty: 'Quantité, la plus haute d’abord', sortName: 'Nom, de A à Z',
       installSec: 'Installation', install: 'Installer sur le téléphone', installed: 'App installée sur cet appareil.',
       installIOS: 'Sur iPhone et iPad, Apple ne permet pas l’installation par bouton : touchez Partager puis « Sur l’écran d’accueil ».',
-      installWait: 'Si l’app est déjà installée, ouvrez-la depuis son icône. Sinon le bouton s’active après quelques secondes ; sinon, utilisez le menu ⋮ de Chrome → Installer l’application.', iconsMissing: 'Les fichiers d’icônes manquent sur GitHub (icon-192.png, icon-512.png…). Sans icônes le téléphone n’installe pas l’app : ajoutez-les à côté de index.html.', version: 'Version {v}',
+      installWait: 'Si l’app est déjà installée, ouvrez-la depuis son icône. Sinon le bouton s’active après quelques secondes ; sinon, utilisez le menu ⋮ de Chrome → Installer l’application.', iconsMissing: 'Les fichiers d’icônes manquent sur GitHub (icon-192.png, icon-512.png…). Sans icônes le téléphone n’installe pas l’app : ajoutez-les à côté de index.html.', version: 'Version {v}', updated: 'App mise à jour en version {v}',
       backup: 'Sauvegarde', exportJson: 'Télécharger la sauvegarde', importJson: 'Restaurer la sauvegarde', imported: 'Sauvegarde restaurée', badFile: 'Fichier de sauvegarde invalide',
       data: 'Données', reset: 'Effacer toutes les données', resetConfirm: 'Touchez encore pour tout effacer', resetDone: 'Données effacées',
       saved: 'Enregistré', added: 'Produit ajouté', needName: 'Saisissez un nom', needCat: 'Créez d’abord une catégorie',
@@ -144,7 +144,7 @@
       sort: 'Reihenfolge der Produkte', sortQty: 'Menge, höchste zuerst', sortName: 'Name, A bis Z',
       installSec: 'Installation', install: 'Auf dem Handy installieren', installed: 'App auf diesem Gerät installiert.',
       installIOS: 'Auf iPhone und iPad erlaubt Apple keine Installation per Taste: Teilen antippen, dann „Zum Home-Bildschirm“.',
-      installWait: 'Ist die App schon installiert, öffne sie über ihr Symbol. Sonst wird die Taste nach einigen Sekunden aktiv; falls nicht, Chrome-Menü ⋮ → App installieren.', iconsMissing: 'Auf GitHub fehlen die Symboldateien (icon-192.png, icon-512.png…). Ohne Symbole installiert das Handy die App nicht: lade sie neben index.html hoch.', version: 'Version {v}',
+      installWait: 'Ist die App schon installiert, öffne sie über ihr Symbol. Sonst wird die Taste nach einigen Sekunden aktiv; falls nicht, Chrome-Menü ⋮ → App installieren.', iconsMissing: 'Auf GitHub fehlen die Symboldateien (icon-192.png, icon-512.png…). Ohne Symbole installiert das Handy die App nicht: lade sie neben index.html hoch.', version: 'Version {v}', updated: 'App auf Version {v} aktualisiert',
       backup: 'Sicherung', exportJson: 'Sicherung herunterladen', importJson: 'Sicherung wiederherstellen', imported: 'Sicherung wiederhergestellt', badFile: 'Ungültige Sicherungsdatei',
       data: 'Daten', reset: 'Alle Daten löschen', resetConfirm: 'Nochmals tippen, um alles zu löschen', resetDone: 'Daten gelöscht',
       saved: 'Gespeichert', added: 'Produkt hinzugefügt', needName: 'Bitte einen Namen eingeben', needCat: 'Lege zuerst eine Kategorie an',
@@ -1333,7 +1333,7 @@
   function isStandalone() {
     try { return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; }
   }
-  var APP_VERSION = '8', iconsMissing = false;
+  var APP_VERSION = '9', iconsMissing = false;
   if (/^https?:$/.test(location.protocol) && !window.claude) {
     try { fetch('icon-192.png', { cache: 'no-store' }).then(function (r) { if (!r.ok) { iconsMissing = true; if (tab === 'set') renderSet(); } }).catch(function () { }); } catch (e) { }
   }
@@ -1719,7 +1719,22 @@
   save();
   if (firstRun) openWelcome(true);
 
+  // ---------- updates ----------
+  // When a new version is on GitHub the app picks it up, reloads once and says so.
+  try { var upd = sessionStorage.getItem('barUpdated'); if (upd) { sessionStorage.removeItem('barUpdated'); setTimeout(function () { toast(t('updated', { v: APP_VERSION })); }, 600); } } catch (e) { }
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && !window.claude) {
-    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () { }); });
+    var hadController = !!navigator.serviceWorker.controller, reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (!hadController || reloading) { hadController = true; return; }
+      reloading = true;
+      save();
+      try { sessionStorage.setItem('barUpdated', '1'); } catch (e) { }
+      location.reload();
+    });
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (reg) {
+        document.addEventListener('visibilitychange', function () { if (!document.hidden) reg.update().catch(function () { }); });
+      }).catch(function () { });
+    });
   }
 })();
