@@ -168,7 +168,7 @@
       barName: 'Nome del locale', barNameHint: 'Compare nei PDF, nel file Excel e nei messaggi ai fornitori.',
       pdfOrderTitle: 'Ordine fornitori', colCat: 'Categoria', colSupplier: 'Fornitore', colQty: 'Quantità', colUnit: 'Unità', colStock: 'Giacenza', colIdeal: 'Ideale', colStatus: 'Stato',
       sheetInv: 'Inventario', sheetOrder: 'Ordine', deleted: 'Eliminato', include: 'Includi nell’ordine',
-      msgHello: 'Buongiorno, vorrei ordinare:', msgThanks: 'Grazie!', exportBtn: 'Esporta', pdfAlert: 'Avviso'
+      msgHello: 'Buongiorno, vorrei ordinare:', msgThanks: 'Grazie!', exportBtn: 'Esporta', pdfAlert: 'Avviso', waInv: 'Inventario su WhatsApp', copyInv: 'Copia testo inventario'
     },
     en: {
       tabOrder: 'Order', orderHint: 'Products low on stock, with the quantity needed to get back to the target stock. You can adjust quantities and untick what you don’t want to order.',
@@ -183,7 +183,7 @@
       barName: 'Venue name', barNameHint: 'Shown on PDFs, the Excel file and messages to suppliers.',
       pdfOrderTitle: 'Supplier order', colCat: 'Category', colSupplier: 'Supplier', colQty: 'Quantity', colUnit: 'Unit', colStock: 'In stock', colIdeal: 'Target', colStatus: 'Status',
       sheetInv: 'Inventory', sheetOrder: 'Order', deleted: 'Deleted', include: 'Include in order',
-      msgHello: 'Hello, I would like to order:', msgThanks: 'Thank you!', exportBtn: 'Export', pdfAlert: 'Alert'
+      msgHello: 'Hello, I would like to order:', msgThanks: 'Thank you!', exportBtn: 'Export', pdfAlert: 'Alert', waInv: 'Inventory on WhatsApp', copyInv: 'Copy inventory text'
     },
     es: {
       tabOrder: 'Pedido', orderHint: 'Productos con stock bajo y la cantidad para volver al stock ideal. Puedes corregir las cantidades y desmarcar lo que no quieras pedir.',
@@ -198,7 +198,7 @@
       barName: 'Nombre del local', barNameHint: 'Aparece en los PDF, en el Excel y en los mensajes a proveedores.',
       pdfOrderTitle: 'Pedido a proveedores', colCat: 'Categoría', colSupplier: 'Proveedor', colQty: 'Cantidad', colUnit: 'Unidad', colStock: 'Existencias', colIdeal: 'Ideal', colStatus: 'Estado',
       sheetInv: 'Inventario', sheetOrder: 'Pedido', deleted: 'Eliminado', include: 'Incluir en el pedido',
-      msgHello: 'Hola, quisiera pedir:', msgThanks: '¡Gracias!', exportBtn: 'Exportar', pdfAlert: 'Aviso'
+      msgHello: 'Hola, quisiera pedir:', msgThanks: '¡Gracias!', exportBtn: 'Exportar', pdfAlert: 'Aviso', waInv: 'Inventario por WhatsApp', copyInv: 'Copiar texto del inventario'
     },
     fr: {
       tabOrder: 'Commande', orderHint: 'Produits en stock bas, avec la quantité pour revenir au stock idéal. Vous pouvez corriger les quantités et décocher ce que vous ne voulez pas commander.',
@@ -213,7 +213,7 @@
       barName: 'Nom de l’établissement', barNameHint: 'Apparaît sur les PDF, le fichier Excel et les messages aux fournisseurs.',
       pdfOrderTitle: 'Commande fournisseurs', colCat: 'Catégorie', colSupplier: 'Fournisseur', colQty: 'Quantité', colUnit: 'Unité', colStock: 'En stock', colIdeal: 'Idéal', colStatus: 'État',
       sheetInv: 'Inventaire', sheetOrder: 'Commande', deleted: 'Supprimé', include: 'Inclure dans la commande',
-      msgHello: 'Bonjour, je souhaite commander :', msgThanks: 'Merci !', exportBtn: 'Exporter', pdfAlert: 'Alerte'
+      msgHello: 'Bonjour, je souhaite commander :', msgThanks: 'Merci !', exportBtn: 'Exporter', pdfAlert: 'Alerte', waInv: 'Inventaire sur WhatsApp', copyInv: 'Copier le texte de l\u2019inventaire'
     },
     de: {
       tabOrder: 'Bestellung', orderHint: 'Produkte mit niedrigem Bestand und die Menge bis zum Sollbestand. Du kannst Mengen ändern und abhaken, was du nicht bestellen willst.',
@@ -228,7 +228,7 @@
       barName: 'Name des Lokals', barNameHint: 'Erscheint in PDFs, in der Excel-Datei und in Nachrichten an Lieferanten.',
       pdfOrderTitle: 'Lieferantenbestellung', colCat: 'Kategorie', colSupplier: 'Lieferant', colQty: 'Menge', colUnit: 'Einheit', colStock: 'Bestand', colIdeal: 'Soll', colStatus: 'Status',
       sheetInv: 'Inventar', sheetOrder: 'Bestellung', deleted: 'Gelöscht', include: 'In Bestellung aufnehmen',
-      msgHello: 'Guten Tag, ich möchte bestellen:', msgThanks: 'Danke!', exportBtn: 'Exportieren', pdfAlert: 'Hinweis'
+      msgHello: 'Guten Tag, ich möchte bestellen:', msgThanks: 'Danke!', exportBtn: 'Exportieren', pdfAlert: 'Hinweis', waInv: 'Inventar per WhatsApp', copyInv: 'Inventartext kopieren'
     }
   };
   Object.keys(I18N2).forEach(function (l) { Object.assign(I18N[l], I18N2[l]); });
@@ -256,6 +256,14 @@
     de: { look: 'Darstellung', theme: 'Design', themeAuto: 'Automatisch', themeLight: 'Hell', themeDark: 'Dunkel', color: 'Farbe', lookHint: 'Die Farbe ändert Tasten und Überschriften. Rot bleibt für Bestandswarnungen reserviert.', c_amber: 'Bernstein', c_blue: 'Blau', c_green: 'Grün', c_purple: 'Violett', c_teal: 'Türkis', c_slate: 'Graphit' }
   };
   Object.keys(I18N5).forEach(function (l) { Object.assign(I18N[l], I18N5[l]); });
+  var I18N6 = {
+    it: { catalog: 'Prodotti', catHint: 'Qui ci sono tutti i tuoi prodotti. Spunta quelli che vuoi nell’inventario: quelli senza spunta restano salvati qui, con le loro quantità.', inInv: '{a} di {n} nell’inventario', inInvLabel: 'Nell’inventario', allOn: 'Tutti', allOff: 'Nessuno', invEmpty: 'Nessun prodotto nell’inventario. Apri Prodotti e spunta quelli da contare.', goCatalog: 'Apri Prodotti', catSearch: 'Cerca nei prodotti…', inInvHint: 'Se togli la spunta il prodotto sparisce da inventario, ordini ed export, ma resta in Prodotti.' },
+    en: { catalog: 'Products', catHint: 'All your products are here. Tick the ones you want in the inventory: unticked ones stay saved here with their quantities.', inInv: '{a} of {n} in the inventory', inInvLabel: 'In the inventory', allOn: 'All', allOff: 'None', invEmpty: 'No products in the inventory. Open Products and tick the ones to count.', goCatalog: 'Open Products', catSearch: 'Search products…', inInvHint: 'If you untick it, the product disappears from inventory, orders and exports, but stays in Products.' },
+    es: { catalog: 'Productos', catHint: 'Aquí están todos tus productos. Marca los que quieres en el inventario: los no marcados quedan guardados aquí con sus cantidades.', inInv: '{a} de {n} en el inventario', inInvLabel: 'En el inventario', allOn: 'Todos', allOff: 'Ninguno', invEmpty: 'No hay productos en el inventario. Abre Productos y marca los que quieres contar.', goCatalog: 'Abrir Productos', catSearch: 'Buscar productos…', inInvHint: 'Si lo desmarcas, el producto desaparece del inventario, pedidos y exportaciones, pero se queda en Productos.' },
+    fr: { catalog: 'Produits', catHint: 'Tous vos produits sont ici. Cochez ceux que vous voulez dans l’inventaire : les autres restent enregistrés ici avec leurs quantités.', inInv: '{a} sur {n} dans l’inventaire', inInvLabel: 'Dans l’inventaire', allOn: 'Tous', allOff: 'Aucun', invEmpty: 'Aucun produit dans l’inventaire. Ouvrez Produits et cochez ceux à compter.', goCatalog: 'Ouvrir Produits', catSearch: 'Rechercher des produits…', inInvHint: 'Si vous le décochez, le produit disparaît de l’inventaire, des commandes et des exports, mais reste dans Produits.' },
+    de: { catalog: 'Produkte', catHint: 'Hier sind alle deine Produkte. Hake an, was ins Inventar soll: nicht angehakte bleiben hier mit ihren Mengen gespeichert.', inInv: '{a} von {n} im Inventar', inInvLabel: 'Im Inventar', allOn: 'Alle', allOff: 'Keine', invEmpty: 'Keine Produkte im Inventar. Öffne Produkte und hake die zu zählenden an.', goCatalog: 'Produkte öffnen', catSearch: 'Produkte suchen…', inInvHint: 'Ohne Haken verschwindet das Produkt aus Inventar, Bestellungen und Exporten, bleibt aber unter Produkte.' }
+  };
+  Object.keys(I18N6).forEach(function (l) { Object.assign(I18N[l], I18N6[l]); });
 
   // ---------- helpers ----------
   function $(id) { return document.getElementById(id); }
@@ -278,7 +286,8 @@
     return s;
   }
   function total(p) { return p.ct * (p.perCt || 1) + p.pz + p.bt + (p.frac ? p.open : 0); }
-  function isLow(p) { return p.min > 0 && total(p) <= p.min; }
+  function isActive(p) { return p.active !== false; }
+  function isLow(p) { return isActive(p) && p.min > 0 && total(p) <= p.min; }
   function idealOf(p) { return p.target > 0 ? p.target : p.min * 2; }
   function orderUnit(p) { if (p.frac || (p.bt > 0 && !p.ct)) return 'bt'; return p.perCt > 1 ? 'ct' : (p.bt > 0 ? 'bt' : 'pz'); }
   function suggested(p) {
@@ -305,7 +314,7 @@
     ];
     var R = 'Distribuzione Rossi', B = 'Enoteca Bianchi';
     function p(cat, name, ct, pz, bt, perCt, min, target, sup, frac, open) {
-      return { id: uid(), catId: cat, name: name, ct: ct, pz: pz, bt: bt, perCt: perCt, min: min, target: target, supplier: sup, frac: !!frac, open: open || 0 };
+      return { id: uid(), catId: cat, name: name, ct: ct, pz: pz, bt: bt, perCt: perCt, min: min, target: target, supplier: sup, frac: !!frac, open: open || 0, active: true };
     }
     var data = {
       cats: c,
@@ -317,7 +326,10 @@
         p('c-super', 'Rum Havana Club 3', 0, 0, 3, 6, 2, 4, B, 1), p('c-super', 'Jägermeister', 0, 0, 2, 6, 1, 3, B, 1, 0.25),
         p('c-bibite', 'Coca-Cola 33 cl', 3, 10, 0, 24, 24, 96, R), p('c-bibite', 'Acqua tonica 20 cl', 1, 4, 0, 24, 24, 48, R),
         p('c-bibite', 'Succo ACE 20 cl', 0, 6, 0, 24, 12, 24, R),
-        p('c-vini', 'Prosecco DOC', 1, 0, 9, 6, 6, 18, B), p('c-vini', 'Vermentino', 0, 0, 4, 6, 3, 6, B)
+        p('c-vini', 'Prosecco DOC', 1, 0, 9, 6, 6, 18, B), p('c-vini', 'Vermentino', 0, 0, 4, 6, 3, 6, B),
+        // in the catalogue but not in the inventory yet
+        p('c-birre', 'Moretti 66 cl', 0, 0, 0, 15, 15, 45, R), p('c-aper', 'Select', 0, 0, 0, 6, 2, 4, B, 1),
+        p('c-super', 'Tequila José Cuervo', 0, 0, 0, 6, 1, 2, B, 1), p('c-bibite', 'Fanta 33 cl', 0, 0, 0, 24, 12, 24, R)
       ],
       suppliers: {}, order: {}, listName: '',
       list: [
@@ -331,9 +343,10 @@
     var got = { 10: 48, 13: 6 };
     data.arrivals = {};
     Object.keys(got).forEach(function (i) { data.arrivals[data.prods[i].id] = got[i]; });
+    data.prods.slice(15).forEach(function (q) { q.active = false; });
     data.history = [{
       id: uid(), at: new Date(Date.now() - 7 * 86400000).toISOString(), arr: {},
-      rows: data.prods.map(function (p, i) { return { id: p.id, name: p.name, cat: p.catId, t: total(p) + used[i] - (got[i] || 0) }; })
+      rows: data.prods.slice(0, used.length).map(function (p, i) { return { id: p.id, name: p.name, cat: p.catId, t: total(p) + used[i] - (got[i] || 0) }; })
     }];
     return data;
   }
@@ -353,7 +366,7 @@
       return {
         id: String(p.id || uid()), catId: String(p.catId), name: String(p.name || ''),
         ct: num(p.ct), pz: num(p.pz), bt: num(p.bt), perCt: num(p.perCt), min: num(p.min),
-        target: num(p.target), supplier: String(p.supplier || '').trim(), frac: !!p.frac, open: quarter(p.open)
+        target: num(p.target), supplier: String(p.supplier || '').trim(), frac: !!p.frac, open: quarter(p.open), active: p.active !== false
       };
     });
     if (d.suppliers && typeof d.suppliers === 'object') {
@@ -413,7 +426,7 @@
     });
   }
   function prodsInCat(catId) {
-    return S.prods.filter(function (p) { return p.catId === catId; }).sort(function (a, b) {
+    return S.prods.filter(function (p) { return p.catId === catId && isActive(p); }).sort(function (a, b) {
       var ra = rank[a.id] != null ? rank[a.id] : 1e9, rb = rank[b.id] != null ? rank[b.id] : 1e9;
       return ra - rb;
     });
@@ -479,7 +492,7 @@
       '<div class="p-qty">' + FIELDS.map(function (f) { return stepHTML(p, f); }).join('') + '</div></li>';
   }
   function catMeta(cat) {
-    var all = S.prods.filter(function (p) { return p.catId === cat.id; });
+    var all = S.prods.filter(function (p) { return p.catId === cat.id && isActive(p); });
     var lowN = all.filter(isLow).length;
     return t('nProducts', { n: all.length }) + (lowN ? ' · <b>' + t('nLow', { n: lowN }) + '</b>' : '');
   }
@@ -496,11 +509,13 @@
         return (!q || p.name.toLowerCase().indexOf(q) >= 0 || p.supplier.toLowerCase().indexOf(q) >= 0) && (!lowOnly || isLow(p));
       });
       if ((q || lowOnly) && !list.length) return;
+      if (!list.length && S.prods.some(function (p) { return p.catId === c.id; })) return;
       shown += list.length;
       html += '<section class="cat" data-cat="' + c.id + '"><div class="cat-h"><h2>' + esc(c.name) + '</h2><span class="meta num" data-meta="' + c.id + '">' + catMeta(c) + '</span></div>' +
         (list.length ? '<ul class="plist">' + list.map(rowHTML).join('') + '</ul>' : '<p class="empty-cat">' + esc(t('emptyCat')) + '</p>') + '</section>';
     });
     if ((q || lowOnly) && !shown) html = '<div class="empty"><p>' + esc(t('noResults')) + '</p></div>';
+    else if (!shown && !html) html = '<div class="empty"><p>' + esc(t('invEmpty')) + '</p><button type="button" class="btn primary" data-act="gocatalog">' + esc(t('goCatalog')) + '</button></div>';
     v.innerHTML = backupBanner() + html;
     updateLowCount();
   }
@@ -538,6 +553,7 @@
     var b = e.target.closest('[data-act]'); if (!b) return;
     var act = b.getAttribute('data-act');
     if (act === 'gocats') { showTab('cats'); return; }
+    if (act === 'gocatalog') { S.settings.listMode = 'prods'; showTab('list'); return; }
     if (act === 'bkdo') { doBackup(); return; }
     if (act === 'bklater') { S.settings.bkSnooze = Date.now() + 86400000; save(); renderInv(); return; }
     var li = b.closest('li[data-id]'); if (!li) return;
@@ -597,10 +613,10 @@
     return Object.keys(set).sort(collator().compare);
   }
 
-  function openProduct(id) {
+  function openProduct(id, activeDefault) {
     if (!S.cats.length) { toast(t('needCat')); showTab('cats'); return; }
     var p = id ? prodById(id) : null;
-    var d = p || { name: '', catId: S.cats[0].id, ct: 0, pz: 0, bt: 0, perCt: 0, min: 0, target: 0, supplier: '', frac: false, open: 0 };
+    var d = p || { name: '', catId: S.cats[0].id, ct: 0, pz: 0, bt: 0, perCt: 0, min: 0, target: 0, supplier: '', frac: false, open: 0, active: activeDefault !== false };
     var opts = S.cats.map(function (c) { return '<option value="' + c.id + '"' + (c.id === d.catId ? ' selected' : '') + '>' + esc(c.name) + '</option>'; }).join('');
     var sups = supplierNames().map(function (s) { return '<option value="' + esc(s) + '"></option>'; }).join('');
     openSheet(
@@ -612,6 +628,7 @@
       '<div class="grid3">' + numField('f-ct', t('ct'), d.ct) + numField('f-pz', t('pz'), d.pz) + numField('f-bt', t('bt'), d.bt) + '</div>' +
       '<div class="grid3">' + numField('f-perCt', t('perCt'), d.perCt) + numField('f-min', t('min'), d.min) + numField('f-target', t('target'), d.target) + '</div>' +
       '<small class="hint tight">' + esc(t('perCtHint')) + ' ' + esc(t('minHint')) + ' ' + esc(t('targetHint')) + '</small>' +
+      '<label class="check"><input id="f-active" type="checkbox"' + (d.active !== false ? ' checked' : '') + '><span>' + esc(t('inInvLabel')) + '<small>' + esc(t('inInvHint')) + '</small></span></label>' +
       '<label class="check"><input id="f-frac" type="checkbox"' + (d.frac ? ' checked' : '') + '><span>' + esc(t('frac')) + '<small>' + esc(t('fracHint')) + '</small></span></label>' +
       '<div class="sheet-actions">' + (p ? '<button type="button" class="btn danger" id="f-del">' + esc(t('del')) + '</button>' : '') +
       '<span class="spacer"></span><button type="button" class="btn" data-close>' + esc(t('cancel')) + '</button>' +
@@ -628,6 +645,7 @@
           target.supplier = $('f-sup').value.trim();
           ['ct', 'pz', 'bt', 'perCt', 'min', 'target'].forEach(function (k) { target[k] = num($('f-' + k).value); });
           target.frac = $('f-frac').checked;
+          target.active = $('f-active').checked;
           if (!target.frac) target.open = 0;
           if (!p) S.prods.push(target);
           delete S.order[target.id];
@@ -791,7 +809,58 @@
     todo.forEach(function (it) { lines.push('• ' + it.text + (it.qty ? ' — ' + it.qty : '')); });
     return lines.join('\n');
   }
+  function listSeg() {
+    var m = S.settings.listMode === 'prods' ? 'prods' : 'notes';
+    return '<div class="segs lseg"><button type="button" class="seg" data-act="lmode" data-m="notes" aria-pressed="' + (m === 'notes') + '">' + esc(listTitle()) + '</button>' +
+      '<button type="button" class="seg" data-act="lmode" data-m="prods" aria-pressed="' + (m === 'prods') + '">' + esc(t('catalog')) + '</button></div>';
+  }
   function renderList() {
+    if (S.settings.listMode === 'prods') { renderCatalog(); return; }
+    renderNotes();
+    $('view-list').insertAdjacentHTML('afterbegin', listSeg());
+  }
+  var catQuery = '';
+  function renderCatalog() {
+    var v = $('view-list');
+    var n = S.prods.length, a = S.prods.filter(isActive).length;
+    v.innerHTML = listSeg() +
+      '<div class="list-h"><h2 class="view-h grow">' + esc(t('catalog')) + '</h2>' +
+      '<button type="button" class="btn primary sm2" data-act="cnew">' + ICON.plus + esc(t('addShort')) + '</button></div>' +
+      '<p class="hint">' + esc(t('catHint')) + '</p>' +
+      '<input id="catSearch" class="input" type="search" autocomplete="off" placeholder="' + esc(t('catSearch')) + '" value="' + esc(catQuery) + '">' +
+      '<p class="meta num list-count mt" id="catCount">' + esc(t('inInv', { a: a, n: n })) + '</p><div id="catBody"></div>';
+    renderCatalogBody();
+    $('catSearch').addEventListener('input', function () { catQuery = this.value; renderCatalogBody(); });
+  }
+  function renderCatalogBody() {
+    var q = catQuery.trim().toLowerCase(), col = collator(), html = '';
+    S.cats.forEach(function (c) {
+      var list = S.prods.filter(function (p) { return p.catId === c.id && (!q || p.name.toLowerCase().indexOf(q) >= 0); })
+        .sort(function (x, y) { return col.compare(x.name, y.name); });
+      if (!list.length) return;
+      var allOn = list.every(isActive);
+      html += '<section class="cat" data-cat="' + c.id + '"><div class="cat-h"><h2>' + esc(c.name) + '</h2>' +
+        '<button type="button" class="btn sm2" data-act="call" data-on="' + (allOn ? '0' : '1') + '">' + esc(t(allOn ? 'allOff' : 'allOn')) + '</button></div>' +
+        '<ul class="olist">' + list.map(function (p) {
+          var sub = [];
+          if (isActive(p)) sub.push(t('totS') + ' ' + fmt(total(p)));
+          if (p.supplier) sub.push(esc(p.supplier));
+          return '<li class="orow' + (isActive(p) ? '' : ' off') + '" data-id="' + p.id + '">' +
+            '<label class="o-chk"><input type="checkbox" data-act="cact"' + (isActive(p) ? ' checked' : '') + ' aria-label="' + esc(t('inInvLabel') + ': ' + p.name) + '"></label>' +
+            '<button type="button" class="l-text" data-act="cedit">' + esc(p.name) + '<small class="num">' + sub.join(' · ') + '</small></button></li>';
+        }).join('') + '</ul></section>';
+    });
+    if (!html) html = '<div class="empty"><p>' + esc(S.prods.length ? t('noResults') : t('noCats')) + '</p></div>';
+    $('catBody').innerHTML = html;
+    var n = S.prods.length, a = S.prods.filter(isActive).length;
+    var cc = $('catCount'); if (cc) cc.textContent = t('inInv', { a: a, n: n });
+  }
+  function setActive(list, on) {
+    snap();
+    list.forEach(function (p) { p.active = on; if (!on) delete S.order[p.id]; });
+    save(); markPending(); renderInv(); renderCatalogBody();
+  }
+  function renderNotes() {
     var v = $('view-list');
     var n = S.list.length, d = S.list.filter(function (i) { return i.done; }).length;
     var html = '<div class="list-h"><h2 class="view-h">' + esc(listTitle()) + '</h2>' +
@@ -829,6 +898,14 @@
   $('view-list').addEventListener('click', function (e) {
     var b = e.target.closest('[data-act]'); if (!b) return;
     var act = b.getAttribute('data-act');
+    if (act === 'lmode') { S.settings.listMode = b.getAttribute('data-m'); save(); renderList(); return; }
+    if (act === 'cnew') { openProduct(null, false); return; }
+    if (act === 'cedit') { openProduct(b.closest('li').getAttribute('data-id')); return; }
+    if (act === 'call') {
+      var cid = b.closest('[data-cat]').getAttribute('data-cat'), q = catQuery.trim().toLowerCase();
+      setActive(S.prods.filter(function (p) { return p.catId === cid && (!q || p.name.toLowerCase().indexOf(q) >= 0); }), b.getAttribute('data-on') === '1');
+      return;
+    }
     if (act === 'rename') { openListRename(); return; }
     if (act === 'lwa') { b.href = 'https://wa.me/?text=' + encodeURIComponent(listText()); return; }
     if (act === 'lcopy') { copyText(listText()); return; }
@@ -838,6 +915,11 @@
     if (act === 'ledit') { openListItem(b.closest('li').getAttribute('data-id')); }
   });
   $('view-list').addEventListener('change', function (e) {
+    if (e.target.matches('[data-act="cact"]')) {
+      var cp = prodById(e.target.closest('li').getAttribute('data-id'));
+      if (cp) setActive([cp], e.target.checked);
+      return;
+    }
     if (!e.target.matches('[data-act="ldone"]')) return;
     var id = e.target.closest('li').getAttribute('data-id');
     var it = S.list.filter(function (i) { return i.id === id; })[0]; if (!it) return;
@@ -999,7 +1081,7 @@
 
   // ---------- history & consumption ----------
   var histPeriod = -1; // -1 = from the last closing to now; k = between closing k-1 and k
-  function currentRows() { return S.prods.map(function (p) { return { id: p.id, name: p.name, cat: p.catId, t: total(p) }; }); }
+  function currentRows() { return S.prods.filter(isActive).map(function (p) { return { id: p.id, name: p.name, cat: p.catId, t: total(p) }; }); }
   function closeInventory() {
     snap();
     S.history.push({ id: uid(), at: new Date().toISOString(), rows: currentRows(), arr: S.arrivals });
@@ -1251,7 +1333,7 @@
   function isStandalone() {
     try { return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; }
   }
-  var APP_VERSION = '6', iconsMissing = false;
+  var APP_VERSION = '8', iconsMissing = false;
   if (/^https?:$/.test(location.protocol) && !window.claude) {
     try { fetch('icon-192.png', { cache: 'no-store' }).then(function (r) { if (!r.ok) { iconsMissing = true; if (tab === 'set') renderSet(); } }).catch(function () { }); } catch (e) { }
   }
@@ -1357,9 +1439,34 @@
   }
   $('installBtn').addEventListener('click', doInstall);
 
+  // ---------- inventory as a WhatsApp message ----------
+  // one line per product, e.g. "Prosecco DOC 3 ct + 5 pz totale 23"
+  function invText() {
+    var u = function (k) { return t(k + 'S').toLowerCase(); };
+    var lines = ['*' + heading('pdfTitle') + '*', dateLong()];
+    S.cats.forEach(function (c) {
+      var list = sortList(S.prods.filter(function (p) { return p.catId === c.id && isActive(p); }));
+      if (!list.length) return;
+      lines.push('', '*' + c.name.toUpperCase() + '*');
+      list.forEach(function (p) {
+        var parts = [];
+        if (p.ct) parts.push(p.ct + ' ' + u('ct'));
+        if (p.pz) parts.push(p.pz + ' ' + u('pz'));
+        var bt = p.bt + (p.frac ? p.open : 0);
+        if (bt) parts.push(fmt(bt) + ' ' + u('bt'));
+        lines.push(p.name + ' ' + (parts.length ? parts.join(' + ') + ' ' : '') + t('totS') + ' ' + fmt(total(p)) + (isLow(p) ? ' ⚠️' : ''));
+      });
+    });
+    var low = S.prods.filter(isLow).length;
+    if (low) lines.push('', '⚠️ ' + t('pdfLow', { n: low }));
+    return lines.join('\n');
+  }
+
   // ---------- export menu ----------
   $('exportBtn').addEventListener('click', function () {
     openSheet('<h3>' + esc(t('exportTitle')) + '</h3><div class="xmenu">' +
+      '<a class="btn block wa" data-x="waInv" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(invText()) + '">' + ICON.wa + esc(t('waInv')) + '</a>' +
+      '<button type="button" class="btn block" data-x="copyInv">' + ICON.copy + esc(t('copyInv')) + '</button>' +
       '<button type="button" class="btn block" data-x="pdfInv">' + ICON.pdf + esc(t('pdfInv')) + '</button>' +
       '<button type="button" class="btn block" data-x="pdfOrder">' + ICON.pdf + esc(t('pdfOrder')) + '</button>' +
       '<button type="button" class="btn block" data-x="xlsx">' + ICON.xls + esc(t('xlsx')) + '</button>' +
@@ -1369,7 +1476,10 @@
       function (panel) {
         panel.querySelector('.xmenu').addEventListener('click', function (e) {
           var b = e.target.closest('[data-x]'); if (!b) return;
-          var x = b.getAttribute('data-x'); closeSheet();
+          var x = b.getAttribute('data-x');
+          if (x === 'waInv') { setTimeout(closeSheet, 400); return; }
+          closeSheet();
+          if (x === 'copyInv') { copyText(invText()); return; }
           if (x === 'pdfInv') exportPDF(); else if (x === 'pdfOrder') exportOrderPDF(); else if (x === 'lpdf') exportListPDF(); else if (x === 'lxls') exportListXLSX(); else exportXLSX();
         });
       });
@@ -1406,7 +1516,7 @@
     if (lowAll) { doc.setTextColor(179, 38, 30); doc.text(t('pdfLow', { n: lowAll }), 14, 30.5); }
     var y = lowAll ? 36 : 31;
     S.cats.forEach(function (c) {
-      var list = sortList(S.prods.filter(function (p) { return p.catId === c.id; }));
+      var list = sortList(S.prods.filter(function (p) { return p.catId === c.id && isActive(p); }));
       if (!list.length) return;
       doc.autoTable(Object.assign({}, TABLE, {
         startY: y,
@@ -1521,7 +1631,7 @@
       { style: 1, cells: [t('colCat'), t('pdfProduct'), t('colSupplier'), t('ctS'), t('pzS'), t('btS'), t('perCt'), t('pdfTot'), t('pdfMin'), t('colIdeal'), t('colStatus')] }
     ];
     S.cats.forEach(function (c) {
-      sortList(S.prods.filter(function (p) { return p.catId === c.id; })).forEach(function (p) {
+      sortList(S.prods.filter(function (p) { return p.catId === c.id && isActive(p); })).forEach(function (p) {
         var low = isLow(p), bt = p.bt + (p.frac ? p.open : 0);
         inv.push({
           style: low ? 2 : 0,

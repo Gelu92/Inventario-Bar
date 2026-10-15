@@ -12,9 +12,10 @@ App per l'inventario del bar che funziona nel browser e si installa sul telefono
 - Mentre modifichi le quantità i prodotti restano fermi: la lista si riordina con il pulsante **Aggiorna**, dopo il tempo scelto nelle Impostazioni, oppure quando esci dall'app
 - Scheda **Ordine**: prodotti sotto scorta divisi per fornitore, con quantità da ordinare e invio su WhatsApp
 - Scheda **Lista** (rinominabile) per appunti con voci da spuntare, esportabile in PDF, Excel o WhatsApp
+- Sottomenu **Prodotti** nella scheda Lista: il catalogo di tutti i prodotti, con la spunta per decidere quali compaiono nell'inventario
 - Tasto **Annulla** per l'ultima modifica
 - Bottiglie aperte a frazioni (¼, ½, ¾)
-- Esportazione in PDF ed Excel
+- Esportazione in PDF ed Excel, e invio dell'inventario su WhatsApp (es. "Prosecco DOC 3 ct + 5 pz totale 23")
 - Lingue: italiano, inglese, spagnolo, francese, tedesco
 - Aspetto a scelta: tema automatico, chiaro o scuro e sei colori (ambra, blu, verde, viola, turchese, grafite)
 - Pulsante **Installa** per mettere l'app sul telefono
@@ -37,4 +38,4 @@ App per l'inventario del bar che funziona nel browser e si installa sul telefono
 
 ## Aggiornare l'app
 
-Dopo aver modificato i file, cambia il numero in `sw.js` (`inventario-bar-v6` → `v7`) così i telefoni scaricano la nuova versione.
+Dopo aver modificato i file, cambia il numero in `sw.js` (`inventario-bar-v8` → `v9`) così i telefoni scaricano la nuova versione.

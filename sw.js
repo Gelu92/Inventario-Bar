@@ -1,5 +1,5 @@
 // Service worker: keeps the app working offline and caches the PDF libraries.
-var CACHE = 'inventario-bar-v6';
+var CACHE = 'inventario-bar-v8';
 var ASSETS = [
   './', './index.html', './app.css', './app.js', './manifest.webmanifest',
   './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png'
