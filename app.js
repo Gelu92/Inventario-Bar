@@ -28,7 +28,7 @@
       sort: 'Ordine dei prodotti', sortQty: 'Quantità, dalla più alta', sortName: 'Nome, dalla A alla Z',
       installSec: 'Installazione', install: 'Installa sul telefono', installed: 'App installata su questo dispositivo.',
       installIOS: 'Su iPhone e iPad Apple non consente l’installazione con un pulsante: tocca Condividi e poi “Aggiungi alla schermata Home”.',
-      installWait: 'Se l’app è già installata, aprila dall’icona sul telefono. Altrimenti il pulsante si attiva dopo qualche secondo; se non succede usa il menu ⋮ di Chrome → Installa app.', iconsMissing: 'Su GitHub mancano i file delle icone (icon-192.png, icon-512.png…). Senza icone il telefono non installa l’app: caricali nella stessa cartella di index.html.', version: 'Versione {v}', updated: 'App aggiornata alla versione {v}',
+      installWait: 'Se l’app è già installata, aprila dall’icona sul telefono. Altrimenti il pulsante si attiva dopo qualche secondo; se non succede usa il menu ⋮ di Chrome → Installa app.', iconsMissing: 'Su GitHub mancano i file delle icone (icon-192.png, icon-512.png…). Senza icone il telefono non installa l’app: caricali nella stessa cartella di index.html.', version: 'Versione {v}', updated: 'App aggiornata alla versione {v}', offOk: 'Uso offline: pronto ✓', offNo: 'Uso offline: non ancora pronto. Apri l’app con internet, aspetta 10 secondi, chiudila e riaprila.', offPdfNo: 'PDF offline: non ancora pronto (serve un’apertura con internet)',
       backup: 'Backup', exportJson: 'Scarica backup', importJson: 'Ripristina backup', imported: 'Backup ripristinato', badFile: 'File di backup non valido',
       data: 'Dati', reset: 'Cancella tutti i dati', resetConfirm: 'Tocca ancora per cancellare tutto', resetDone: 'Dati cancellati',
       saved: 'Salvato', added: 'Prodotto aggiunto', needName: 'Inserisci un nome', needCat: 'Crea prima una categoria',
@@ -57,7 +57,7 @@
       sort: 'Product order', sortQty: 'Quantity, highest first', sortName: 'Name, A to Z',
       installSec: 'Installation', install: 'Install on phone', installed: 'App installed on this device.',
       installIOS: 'On iPhone and iPad Apple does not allow one-tap install: tap Share, then “Add to Home Screen”.',
-      installWait: 'If the app is already installed, open it from its icon on the phone. Otherwise the button turns on after a few seconds; if it does not, use Chrome’s ⋮ menu → Install app.', iconsMissing: 'The icon files are missing on GitHub (icon-192.png, icon-512.png…). Without icons the phone will not install the app: upload them next to index.html.', version: 'Version {v}', updated: 'App updated to version {v}',
+      installWait: 'If the app is already installed, open it from its icon on the phone. Otherwise the button turns on after a few seconds; if it does not, use Chrome’s ⋮ menu → Install app.', iconsMissing: 'The icon files are missing on GitHub (icon-192.png, icon-512.png…). Without icons the phone will not install the app: upload them next to index.html.', version: 'Version {v}', updated: 'App updated to version {v}', offOk: 'Offline use: ready ✓', offNo: 'Offline use: not ready yet. Open the app with internet, wait 10 seconds, close it and open it again.', offPdfNo: 'PDF offline: not ready yet (open once with internet)',
       backup: 'Backup', exportJson: 'Download backup', importJson: 'Restore backup', imported: 'Backup restored', badFile: 'Invalid backup file',
       data: 'Data', reset: 'Delete all data', resetConfirm: 'Tap again to delete everything', resetDone: 'Data deleted',
       saved: 'Saved', added: 'Product added', needName: 'Enter a name', needCat: 'Create a category first',
@@ -86,7 +86,7 @@
       sort: 'Orden de los productos', sortQty: 'Cantidad, de mayor a menor', sortName: 'Nombre, de la A a la Z',
       installSec: 'Instalación', install: 'Instalar en el móvil', installed: 'App instalada en este dispositivo.',
       installIOS: 'En iPhone y iPad Apple no permite instalar con un botón: toca Compartir y luego “Añadir a pantalla de inicio”.',
-      installWait: 'Si la app ya está instalada, ábrela desde su icono en el móvil. Si no, el botón se activa en unos segundos; si no ocurre, usa el menú ⋮ de Chrome → Instalar app.', iconsMissing: 'En GitHub faltan los archivos de los iconos (icon-192.png, icon-512.png…). Sin iconos el móvil no instala la app: súbelos junto a index.html.', version: 'Versión {v}', updated: 'App actualizada a la versión {v}',
+      installWait: 'Si la app ya está instalada, ábrela desde su icono en el móvil. Si no, el botón se activa en unos segundos; si no ocurre, usa el menú ⋮ de Chrome → Instalar app.', iconsMissing: 'En GitHub faltan los archivos de los iconos (icon-192.png, icon-512.png…). Sin iconos el móvil no instala la app: súbelos junto a index.html.', version: 'Versión {v}', updated: 'App actualizada a la versión {v}', offOk: 'Uso sin conexión: listo ✓', offNo: 'Uso sin conexión: todavía no está listo. Abre la app con internet, espera 10 segundos, ciérrala y vuelve a abrirla.', offPdfNo: 'PDF sin conexión: todavía no está listo (ábrela una vez con internet)',
       backup: 'Copia de seguridad', exportJson: 'Descargar copia', importJson: 'Restaurar copia', imported: 'Copia restaurada', badFile: 'Archivo no válido',
       data: 'Datos', reset: 'Borrar todos los datos', resetConfirm: 'Toca otra vez para borrarlo todo', resetDone: 'Datos borrados',
       saved: 'Guardado', added: 'Producto añadido', needName: 'Escribe un nombre', needCat: 'Primero crea una categoría',
@@ -115,7 +115,7 @@
       sort: 'Ordre des produits', sortQty: 'Quantité, la plus haute d’abord', sortName: 'Nom, de A à Z',
       installSec: 'Installation', install: 'Installer sur le téléphone', installed: 'App installée sur cet appareil.',
       installIOS: 'Sur iPhone et iPad, Apple ne permet pas l’installation par bouton : touchez Partager puis « Sur l’écran d’accueil ».',
-      installWait: 'Si l’app est déjà installée, ouvrez-la depuis son icône. Sinon le bouton s’active après quelques secondes ; sinon, utilisez le menu ⋮ de Chrome → Installer l’application.', iconsMissing: 'Les fichiers d’icônes manquent sur GitHub (icon-192.png, icon-512.png…). Sans icônes le téléphone n’installe pas l’app : ajoutez-les à côté de index.html.', version: 'Version {v}', updated: 'App mise à jour en version {v}',
+      installWait: 'Si l’app est déjà installée, ouvrez-la depuis son icône. Sinon le bouton s’active après quelques secondes ; sinon, utilisez le menu ⋮ de Chrome → Installer l’application.', iconsMissing: 'Les fichiers d’icônes manquent sur GitHub (icon-192.png, icon-512.png…). Sans icônes le téléphone n’installe pas l’app : ajoutez-les à côté de index.html.', version: 'Version {v}', updated: 'App mise à jour en version {v}', offOk: 'Hors ligne : prêt ✓', offNo: 'Hors ligne : pas encore prêt. Ouvrez l’app avec internet, attendez 10 secondes, fermez-la et rouvrez-la.', offPdfNo: 'PDF hors ligne : pas encore prêt (ouvrez une fois avec internet)',
       backup: 'Sauvegarde', exportJson: 'Télécharger la sauvegarde', importJson: 'Restaurer la sauvegarde', imported: 'Sauvegarde restaurée', badFile: 'Fichier de sauvegarde invalide',
       data: 'Données', reset: 'Effacer toutes les données', resetConfirm: 'Touchez encore pour tout effacer', resetDone: 'Données effacées',
       saved: 'Enregistré', added: 'Produit ajouté', needName: 'Saisissez un nom', needCat: 'Créez d’abord une catégorie',
@@ -144,7 +144,7 @@
       sort: 'Reihenfolge der Produkte', sortQty: 'Menge, höchste zuerst', sortName: 'Name, A bis Z',
       installSec: 'Installation', install: 'Auf dem Handy installieren', installed: 'App auf diesem Gerät installiert.',
       installIOS: 'Auf iPhone und iPad erlaubt Apple keine Installation per Taste: Teilen antippen, dann „Zum Home-Bildschirm“.',
-      installWait: 'Ist die App schon installiert, öffne sie über ihr Symbol. Sonst wird die Taste nach einigen Sekunden aktiv; falls nicht, Chrome-Menü ⋮ → App installieren.', iconsMissing: 'Auf GitHub fehlen die Symboldateien (icon-192.png, icon-512.png…). Ohne Symbole installiert das Handy die App nicht: lade sie neben index.html hoch.', version: 'Version {v}', updated: 'App auf Version {v} aktualisiert',
+      installWait: 'Ist die App schon installiert, öffne sie über ihr Symbol. Sonst wird die Taste nach einigen Sekunden aktiv; falls nicht, Chrome-Menü ⋮ → App installieren.', iconsMissing: 'Auf GitHub fehlen die Symboldateien (icon-192.png, icon-512.png…). Ohne Symbole installiert das Handy die App nicht: lade sie neben index.html hoch.', version: 'Version {v}', updated: 'App auf Version {v} aktualisiert', offOk: 'Offline-Nutzung: bereit ✓', offNo: 'Offline-Nutzung: noch nicht bereit. App mit Internet öffnen, 10 Sekunden warten, schließen und wieder öffnen.', offPdfNo: 'PDF offline: noch nicht bereit (einmal mit Internet öffnen)',
       backup: 'Sicherung', exportJson: 'Sicherung herunterladen', importJson: 'Sicherung wiederherstellen', imported: 'Sicherung wiederhergestellt', badFile: 'Ungültige Sicherungsdatei',
       data: 'Daten', reset: 'Alle Daten löschen', resetConfirm: 'Nochmals tippen, um alles zu löschen', resetDone: 'Daten gelöscht',
       saved: 'Gespeichert', added: 'Produkt hinzugefügt', needName: 'Bitte einen Namen eingeben', needCat: 'Lege zuerst eine Kategorie an',
@@ -1333,9 +1333,26 @@
   function isStandalone() {
     try { return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; }
   }
-  var APP_VERSION = '9', iconsMissing = false;
+  var APP_VERSION = '10', iconsMissing = false;
   if (/^https?:$/.test(location.protocol) && !window.claude) {
     try { fetch('icon-192.png', { cache: 'no-store' }).then(function (r) { if (!r.ok) { iconsMissing = true; if (tab === 'set') renderSet(); } }).catch(function () { }); } catch (e) { }
+  }
+  // is everything needed to open the app without internet saved on the phone?
+  var offState = null, pdfOff = null;
+  function checkOffline() {
+    if (!('serviceWorker' in navigator) || !window.caches || window.claude || !/^https?:$/.test(location.protocol)) return;
+    Promise.all([
+      caches.match('app.js?v=' + APP_VERSION), caches.match('index.html'),
+      caches.match('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
+    ]).then(function (r) {
+      offState = !!(navigator.serviceWorker.controller && r[0] && r[1]); pdfOff = !!r[2];
+      if (tab === 'set') { var el = $('offStatus'); if (el) el.outerHTML = offHTML(); }
+    }).catch(function () { });
+  }
+  function offHTML() {
+    if (offState === null) return '<p id="offStatus" hidden></p>';
+    return '<p id="offStatus" class="' + (offState ? 'status ok' : 'warn') + '">' + esc(t(offState ? 'offOk' : 'offNo')) +
+      (offState && !pdfOff ? '<br><small>' + esc(t('offPdfNo')) + '</small>' : '') + '</p>';
   }
   function installStatus() {
     if (isStandalone()) return { text: t('installed'), ok: true, btn: false };
@@ -1352,7 +1369,7 @@
       '<div class="set-group"><h3>' + esc(t('installSec')) + '</h3>' +
       (st.btn ? '<button type="button" class="btn primary block" id="s-install"' + (st.disabled ? ' disabled' : '') + '>' + esc(t('install')) + '</button>' : '') +
       (st.text ? '<p class="status' + (st.ok ? ' ok' : '') + '">' + esc(st.text) + '</p>' : '') +
-      (iconsMissing ? '<p class="warn">' + esc(t('iconsMissing')) + '</p>' : '') + '</div>' +
+      (iconsMissing ? '<p class="warn">' + esc(t('iconsMissing')) + '</p>' : '') + offHTML() + '</div>' +
       '<div class="set-group"><h3>' + esc(t('barName')) + '</h3><input class="input" id="s-bar" type="text" autocomplete="off" value="' + esc(s.barName) + '" aria-label="' + esc(t('barName')) + '"><p class="status">' + esc(t('barNameHint')) + '</p></div>' +
       lookGroup() +
       '<div class="set-group"><h3>' + esc(t('lang')) + '</h3><select class="input" id="s-lang" aria-label="' + esc(t('lang')) + '">' + langOpts + '</select></div>' +
@@ -1370,6 +1387,7 @@
       '<p class="appver">' + esc(t('version', { v: APP_VERSION })) + ' · Gelu Inc.</p>';
 
     var ib = $('s-install'); if (ib && !st.disabled) ib.addEventListener('click', doInstall);
+    checkOffline();
     $('s-bar').addEventListener('change', function () { S.settings.barName = this.value.trim(); save(); toast(t('saved')); });
     $('s-lang').addEventListener('change', function () { S.settings.lang = this.value; save(); applyI18n(); renderAll(); });
     $('s-delay').addEventListener('change', function () { S.settings.delay = num(this.value); save(); if (pending) markPending(); });

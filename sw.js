@@ -1,6 +1,6 @@
 // Service worker: the app always loads its newest files when online,
 // and keeps a copy so it also works offline.
-var VERSION = '9';
+var VERSION = '10';
 var CACHE = 'inventario-bar-v' + VERSION;
 var ASSETS = [
   './', './index.html', './app.css?v=' + VERSION, './app.js?v=' + VERSION, './manifest.webmanifest',
@@ -32,14 +32,23 @@ self.addEventListener('fetch', function (e) {
   if (req.method !== 'GET') return;
   var url = new URL(req.url);
   if (url.origin === location.origin) {
-    // the app's own files: network first (always the newest), saved copy when offline
-    var fresh = req.mode === 'navigate' ? new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(req, { cache: 'no-cache' });
-    e.respondWith(fetch(fresh).then(function (res) {
-      if (res && res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(req.mode === 'navigate' ? './index.html' : req, copy); }); }
+    // the app's own files: newest from the network, but if the network does not answer
+    // within 3 seconds (no signal, airplane mode, one bar) use the saved copy straight away
+    var nav = req.mode === 'navigate';
+    var key = nav ? './index.html' : req;
+    var fresh = nav ? new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(req, { cache: 'no-cache' });
+    var fromCache = function () { return caches.match(key).then(function (hit) { return hit || caches.match(req, { ignoreSearch: true }); }); };
+    var net = fetch(fresh).then(function (res) {
+      if (res && res.ok) { var copy = res.clone(); caches.open(CACHE).then(function (c) { c.put(key, copy); }); }
       return res;
-    }).catch(function () {
-      return caches.match(req.mode === 'navigate' ? './index.html' : req).then(function (hit) {
-        return hit || caches.match(req, { ignoreSearch: true });
+    });
+    e.respondWith(new Promise(function (resolve, reject) {
+      var done = false;
+      var finish = function (r) { if (!done && r) { done = true; resolve(r); } };
+      var timer = setTimeout(function () { fromCache().then(finish); }, 3000);
+      net.then(function (r) { clearTimeout(timer); finish(r); }).catch(function () {
+        clearTimeout(timer);
+        fromCache().then(function (hit) { if (hit) finish(hit); else if (!done) { done = true; reject(new Error('offline')); } });
       });
     }));
     return;
